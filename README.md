@@ -1,6 +1,8 @@
 # daxfb-calculator
 Calculator/Factory Planner for factory management games.
 
+本分支是对项目进行了汉化改进
+
 This project was initially developed as calculator/factory planner for Evospace game.
 Later it turned out this project is quite universal and could be used for other factory management games.
 

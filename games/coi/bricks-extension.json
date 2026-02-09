@@ -1,0 +1,115 @@
+{
+  "version": "1.0.0",
+  "name": "Bricks 扩展",
+  "description": "恢复 v0.23 版本的 Bricks 物品和相关配方",
+  "items": [
+    {
+      "name": "Bricks",
+      "label": "Bricks",
+      "image": "Bricks",
+      "type": 6
+    }
+  ],
+  "recipeDictionaries": [
+    {
+      "name": "BricksMaker",
+      "recipes": [
+        {
+          "name": "BricksMaking",
+          "input": [
+            {"name": "Dirt", "count": 14},
+            {"name": "Coal", "count": 4},
+            {"name": "Water", "count": 4},
+            {"name": "Worker", "count": 6, "flags": 28},
+            {"name": "MaintenanceT1", "count": 4, "flags": 12}
+          ],
+          "output": [
+            {"name": "Bricks", "count": 8},
+            {"name": "Exhaust", "count": 8}
+          ],
+          "time": 40
+        }
+      ]
+    },
+    {
+      "name": "AssemblyManual",
+      "recipes": [
+        {
+          "name": "CpBricksAssemblyT1",
+          "input": [
+            {"name": "Iron", "count": 3},
+            {"name": "Wood", "count": 3},
+            {"name": "Bricks", "count": 4},
+            {"name": "Worker", "count": 4, "flags": 28},
+            {"name": "Electricity", "count": 40, "flags": 12}
+          ],
+          "output": [
+            {"name": "ConstructionParts", "count": 4}
+          ],
+          "time": 40
+        }
+      ]
+    },
+    {
+      "name": "AssemblyElectrified",
+      "recipes": [
+        {
+          "name": "CpBricksAssemblyT2",
+          "input": [
+            {"name": "Iron", "count": 3},
+            {"name": "Wood", "count": 3},
+            {"name": "Bricks", "count": 4},
+            {"name": "Worker", "count": 6, "flags": 28},
+            {"name": "MaintenanceT1", "count": 2, "flags": 12},
+            {"name": "Electricity", "count": 80, "flags": 12}
+          ],
+          "output": [
+            {"name": "ConstructionParts", "count": 4}
+          ],
+          "time": 20
+        }
+      ]
+    },
+    {
+      "name": "AssemblyElectrifiedT2",
+      "recipes": [
+        {
+          "name": "CpBricksAssemblyT3",
+          "input": [
+            {"name": "Iron", "count": 3},
+            {"name": "Wood", "count": 3},
+            {"name": "Bricks", "count": 4},
+            {"name": "Worker", "count": 8, "flags": 28},
+            {"name": "MaintenanceT1", "count": 4, "flags": 12},
+            {"name": "Electricity", "count": 150, "flags": 12}
+          ],
+          "output": [
+            {"name": "ConstructionParts", "count": 4}
+          ],
+          "time": 10
+        }
+      ]
+    },
+    {
+      "name": "AssemblyRoboticT1",
+      "recipes": [
+        {
+          "name": "CpBricksAssemblyT4",
+          "input": [
+            {"name": "Iron", "count": 6},
+            {"name": "Wood", "count": 6},
+            {"name": "Bricks", "count": 8},
+            {"name": "Worker", "count": 2, "flags": 28},
+            {"name": "MaintenanceT2", "count": 4, "flags": 12},
+            {"name": "Electricity", "count": 250, "flags": 12},
+            {"name": "Computing", "count": 4, "flags": 12}
+          ],
+          "output": [
+            {"name": "ConstructionParts", "count": 8}
+          ],
+          "time": 10
+        }
+      ]
+    }
+  ]
+}

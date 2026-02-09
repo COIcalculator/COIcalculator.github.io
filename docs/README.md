@@ -1,211 +1,211 @@
 # daxfb-calculator
-Calculator/Factory Planner for factory management games.
+工厂管理游戏的计算器/工厂规划工具。
 
-[Link to this page](https://doubleaxe.github.io/daxfb-calculator/docs/).
+[此页面的链接](https://doubleaxe.github.io/daxfb-calculator/docs/).
 
-[Edit this page](https://github.com/doubleaxe/daxfb-calculator/edit/main/docs/README.md).
+[编辑此页面](https://github.com/doubleaxe/daxfb-calculator/edit/main/docs/README.md).
 
-# General usage
+# 通用用法
 
-Calculator can work in two modes: `Drag and Drop mode` and `Point and Click mode`.
-First is optimized for PC usage and is turned on by default on PC.
-Second is optimized (and default) for mobile devices, but also may be used on PC.
-Modes are switched on and off using `Options` dialog.
+计算器可以在两种模式下工作：`拖放模式` 和 `点击模式`。
+第一种针对 PC 使用进行了优化，默认在 PC 上打开。
+第二种针对移动设备进行了优化（和默认使用），但也可在 PC 上使用。
+模式可通过`选项`对话框切换打开和关闭。
 
-## Drag and Drop mode
+## 拖放模式
 
-In this mode everything is dragged by primary mouse button.
-Note: if both `Drag and Drop` and `Point and Click` modes are enabled,
-there will be delay (300 ms) between mouse button is pressed on item and dragging actually starts.
-This is done to differentiate `Click` and `Drag` events.
+在此模式下，一切都通过鼠标主键拖动。
+注意：如果同时启用 `拖放` 和 `点击` 模式,
+鼠标按钮在项目上按下和拖动实际开始之间会有延迟（300 毫秒）。
+这样做是为了区分 `点击` 和 `拖动` 事件。
 
-<details><summary>Drag factory and drop on blueprint</summary>
+<details><summary>拖动工厂并放在蓝图上</summary>
 
 ![drag-n-drop-1](./assets/drag-n-drop-1.gif)
 </details>
 
-<details><summary>Drag links between factories</summary>
+<details><summary>在工厂之间拖动链接</summary>
 
 ![drag-n-drop-2](./assets/drag-n-drop-2.gif)
 </details>
 
-<details><summary>Drag link to change ports ordering</summary>
+<details><summary>拖动链接以更改端口排序</summary>
 
 ![drag-n-drop-6](./assets/drag-n-drop-6.gif)
 </details>
 
-<details><summary>Drag to move factory</summary>
+<details><summary>拖动以移动工厂</summary>
 
 ![drag-n-drop-3](./assets/drag-n-drop-3.gif)
 </details>
 
-<details><summary>Drag on free space to scroll window</summary>
+<details><summary>在空闲空间上拖动以滚动窗口</summary>
 
 ![drag-n-drop-4](./assets/drag-n-drop-4.gif)
 </details>
 
-<details><summary>Drag something out of window to automatically scroll</summary>
+<details><summary>拖动东西超出窗口以自动滚动</summary>
 
 ![drag-n-drop-5](./assets/drag-n-drop-5.gif)
 </details>
 
-## Point and Click mode
+## 点击模式
 
-In this mode items can be selected with click, and then pasted/moved with another click on target element.
+在此模式下，可以通过点击选择项目，然后通过另一次点击目标元素来粘贴/移动。
 
-<details><summary>Paste factory on blueprint</summary>
+<details><summary>在蓝图上粘贴工厂</summary>
 
 ![point-n-click1](./assets/point-n-click1.gif)
 </details>
 
-<details><summary>Paste links between factories</summary>
+<details><summary>在工厂之间粘贴链接</summary>
 
 ![point-n-click2](./assets/point-n-click2.gif)
 </details>
 
-<details><summary>Change port ordering (should click carefully on free space between ports)</summary>
+<details><summary>更改端口排序（应小心点击端口之间的空闲空间）</summary>
 
 ![point-n-click4](./assets/point-n-click4.gif)
 </details>
 
-<details><summary>Move factory</summary>
+<details><summary>移动工厂</summary>
 
 ![point-n-click3](./assets/point-n-click3.gif)
 </details>
 
-# Selecting  recipe
+# 选择配方
 
-Just click on center factory icon to select recipe. Filters also work here.
-If factory has only one recipe - recipes menu won't be shown.
+只需点击中心工厂图标选择配方。筛选器也在这里工作。
+如果工厂只有一个配方-不会显示配方菜单。
 
-<details><summary>Details</summary>
+<details><summary>详情</summary>
 
 ![recipe-selection](./assets/recipe-selection.png)
 </details>
 
-# Factory rotation
+# 工厂旋转
 
-Factory may be rotated to create more pretty looking links.
+可以旋转工厂以创建更漂亮的链接。
 
-<details><summary>See in action</summary>
+<details><summary>实际操作</summary>
 
 ![rotation](./assets/rotation.gif)
 </details>
 
-# Factory count adjustment
+# 工厂计数调整
 
-Factory count can be set using `hamburger` factory menu. Optionally `Plus` and `Minus` button on factory card face can be turned on in settings. `Plus` and `Minus` adjust count by one, while textbox on menu can be used to set fractional counts. There is also `Mass Update Count` toolbar button, which could be used to apply automatically calculated counts.
+工厂计数可以使用汉堡菜单设置。可选择在设置中打开工厂卡片上的加号和减号按钮。加号和减号调整计数，而菜单上的文本框可用于设置分数计数。还有工具栏上的批量更新计数按钮，可用于应用自动计算的计数。
 
-<details><summary>See in action</summary>
+<details><summary>实际操作</summary>
 
 ![count-adjustment](./assets/count-adjustment.gif)
 </details>
 
-# Factory upgrade / downgrade
+# 工厂升级/降级
 
-If factory has next or previous tier version, upgrade option becomes available inside `hamburger` factory menu. Turning upgrade mode affects all factories.
+如果工厂有下一个或上一个等级版本，升级选项在汉堡菜单内可用。打开升级模式可影响所有工厂。
 
-<details><summary>See in action</summary>
+<details><summary>实际操作</summary>
 
 ![upgrade-mode](./assets/upgrade-mode.gif)
 </details>
 
-# Inspection of logistic transport
+# 物流运输检查
 
-Logistic transport can be inspected for links, which connects items with known transport (conveyors, pipes, manipulators, robotic arms). When clicking on link menu, logistic info will be shown automatically. Specific transport may be locked, in this case locked transport will be preferred for entire blueprint.
+物流运输可以检查链接，这些链接与已知运输（输送机、管道、操纵器、机械臂）连接项目。单击链接菜单时，物流信息将自动显示。特定运输可以被锁定，在这种情况下，整个蓝图将更喜欢锁定的运输。
 
-<details><summary>See in action</summary>
+<details><summary>实际操作</summary>
 
 ![logistic](./assets/logistic.gif)
 </details>
 
-# Summary window
+# 摘要窗口
 
-Summary window will show overall consumption / production / building costs of blueprint. Because it is calculated while blueprint is updated - it is recommended to turn it off for very large blueprints. Summary window can work in two modes - simple and expanded. Modes are switched sequentially by corresponding button. Summary window will be empty if blueprint is empty or not calculated. Summary window shows production / consumption only for open ends (not connected to anything).
+摘要窗口将显示蓝图的总体消耗/生产/建筑成本。由于在更新蓝图时进行计算-对于非常大的蓝图，建议将其关闭。摘要窗口可以以两种模式工作-简单和扩展。模式通过相应的按钮依次切换。如果蓝图为空或未计算，摘要窗口将为空。摘要窗口仅显示打开端点的生产/消耗（未连接到任何东西）。
 
 
-<details><summary>See in action</summary>
+<details><summary>实际操作</summary>
 
 ![summary](./assets/summary.gif)
 </details>
 
-# Filtering
+# 筛选
 
-Text filter accepts multiple words, these words are split by space and then applied to filter together.
-For example search text `it a` may be used to search for `Item A`, or `co fu` may be used to search for `Copper Blast Furnace`.
+文本过滤器接受多个单词，这些单词通过空格分开，然后一起应用过滤。
+例如搜索文本 `it a` 可用于搜索 `Item A`, 或 `co fu` 可用于搜索 `Copper Blast Furnace`。
 
-## Filtering on left panel
+## 在左面板上筛选
 
-Left panel factories may be filtered by input/output item.
-If filter is applied - after adding new factory from left panel to blueprint corresponding recipe will be selected automatically.
+左面板工厂可以通过输入/输出项目进行筛选。
+如果应用过滤-从左面板添加新工厂到蓝图后，将自动选择相应的配方。
 
-## Filtering by input/output for factory on blueprint
+## 按蓝图上工厂的输入/输出筛选
 
-Input/output adjacent square, which display throughput, may be clicked to quick filter left panel by matching item.
-Because filtered recipe is selected automatically, this way long production lines may be built easier and quicker.
+显示吞吐量的输入/输出相邻方块可以点击以快速筛选左面板匹配项目。
+由于筛选的配方会自动选择，这样长生产线可能更轻松和更快速地建导。
 
-<details><summary>See in action</summary>
+<details><summary>实际操作</summary>
 
 ![factory-filtering](./assets/factory-filtering.gif)
 </details>
 
-## Filtering on summary window
+## 在摘要窗口上筛选
 
-Filter can also be applied by clicking icon on summary window.
+也可以通过单击摘要窗口上的图标来应用过滤。
 
-# Solving graph
+# 求解图
 
-Graph is solved by clicking on ![solve](./assets/solve.png) toolbar button.
-In automatic mode graph is solved automatically on every change.
-Because solving is slower for larger factory count - manual mode is preferred for very large blueprints.
+通过单击工具栏按钮 ![solve](./assets/solve.png) 来求解图。
+在自动模式下，图会在每次更改时自动求解。
+由于对更大的工厂计数求解较慢-对于非常大的蓝图，首选手动模式。
 
-Solving is done with fixed precision, which can be changed in `Settings`.
-The lower number means higher precision and better accuracy.
-Because of this, there will be computation errors if connected factories throughput greatly differs or precision is too low.
+求解使用固定精度进行，可在`设置`中更改。
+数字越低，意味着精度越高，准确性越好。
+正因为如此，如果连接的工厂吞吐量差异很大或精度太低，将会出现计算错误。
 
-## Automatic graph error detection
+## 自动图形错误检测
 
-Factory chains may be unbalanced when factory outputs two item types, and these items directly or through production chain will be both feed to another factory at different rate. Production cycles may also be unbalanced. In this case graph solver cannot solve factory io, so entire flow rate will be 0. This is expected, because real production chain of this type will also produce at zero rate after some time, because one output will be clogged or input will be starved.
+当工厂输出两种项目类型，并且这些项目直接或通过生产链会以不同比率馈送到另一工厂时，工厂链可能会不平衡。生产周期也可能不平衡。在这种情况下，图形求解器无法求解工厂io，因此整个流量将为 0。这是预期的，因为这种类型的真实生产链在一段时间后也会以零速率生产，因为一个输出将被堵塞或输入将被挨饿。
 
-Graph solver has automatic error detection and will try to find port which causes error. This is implemented by adding virtual sink with lowest priority to each factory output. If this virtual sink flow is non-zero this means connected factory output is unbalanced, and such output will be highlighted in red color. To resolve this error, some building should be added instead of this virtual sink, which will consume overflown items.
+图形求解器具有自动错误检测，并将尝试找到导致错误的端口。这通过向每个工厂输出添加具有最低优先级的虚拟接收器来实现。如果此虚拟接收器流量不为零，这意味着连接的工厂输出不平衡，这样的输出将以红色突出显示。要解决此错误，应添加一些建筑而不是此虚拟接收器，这将消耗溢出的项目。
 
-Only unbalanced outputs are detected automatically, because it is most common case.
+仅自动检测不平衡的输出，因为这是最常见的情况。
 
-<details><summary>Example</summary>
+<details><summary>示例</summary>
 
 ![unbalanced-graph](./assets/unbalanced-graph.gif)
 </details>
 
-## Special buildings
+## 特殊建筑
 
-Almost every game implementation has set of special buildings. These buildings are usually represented as containers (maybe inexistent in real game) which accept all items of some kind (fluid, solid, etc). These buildings have 3 recipes, input, output and input+output. They could be used as utility buildings to tune production flows or for nicer graph layouts.
+几乎每个游戏实现都有一套特殊建筑。这些建筑通常表示为容器（可能在真实游戏中不存在），它接受某种项目（流体、固体等）。这些建筑有 3 个配方，输入、输出和输入+输出。它们可以用作实用建筑来调整生产流或具有更好的图形布局。
 
-# Fine-tuning graph solve process
+# 微调图形求解过程
 
-## Locking factories
+## 锁定工厂
 
-Initially, if no factories in given line are locked, no input/output can go beyond maximum.
-In this mode calculator will answer the question: where is bottleneck and how many items this line will produce.
+最初，如果给定行中的工厂都没有被锁定，没有输入/输出可以超过最大值。
+在此模式中，计算器将回答以下问题：瓶颈在哪里，这条线将生产多少种品。
 
-When one or more factories are locked, other factories in the same line can go beyond their maximum count.
-In this mode calculator will answer the question: how many factories will be needed to produce items at this rate.
+当一个或多个工厂被锁定时，此行中的其他工厂可以超过其最大计数。
+在此模式中，计算器将回答以下问题：此速率下需要多少工厂来生产物品。
 
-<details><summary>See in action</summary>
+<details><summary>实际操作</summary>
 
 ![locking](./assets/locking.gif)
 </details>
 
-## Setting objective
+## 设置目标
 
-Initially graph is calculated using simple mode. In this mode graph solver tries to maximize overall io flow. This is acceptable for simple production chains, but may be adjusted for complex chains with multiple dependent output where maximizing one output will minimize other. It is recommended to set only one final product as main objective. Graph solver will first maximize main objective, and then will try to maximize secondary objective without hurting main objective. If any factory is set as objective - all other factories are excluded from maximization process.
+最初使用简单模式计算图形。在这种模式下，图形求解器尝试最大化整体io流。这对于简单的生产链是可以接受的，但对于具有多个相关输出的复杂链可能会调整，其中最大化一个输出将最小化其他。建议仅以一个最终产品作为主要目标。图形求解器将首先最大化主要目标，然后将尝试最大化次要目标而不损害主要目标。如果将任何工厂设置为目标-所有其他工厂都从最大化过程中排除。
 
-<details><summary>See in action</summary>
+<details><summary>实际操作</summary>
 
 ![locking](./assets/objective.gif)
 </details>
 
-# Known problems and limitations
+# 已知问题和限制
 
-## Too much flow difference between connected factories
+## 连接工厂之间流量差异过大
 
-When one factory produces/consumes at much higher ratio, than other connected factory (1000x or more), and their numbers are not integers, calculator fails to determine correct count due to insufficient precision. To fix this issue, precision should be set to other (lower) value, although it may not be enough for some cases.
+当一个工厂生产/消耗比例远高于另一个连接工厂（1000 倍或更多），并且其数字不是整数时，由于精度不足，计算器无法确定正确的计数。为了解决此问题，应将精度设置为其他（更低）值，尽管对于某些情况可能不够。
